@@ -161,6 +161,8 @@
 </div>
 
 <script>
+
+	var IUType = 'I';
 	var AppD = {
 		attachEvents: function () {
 			var o = this;
@@ -183,6 +185,7 @@
 		eventHandlers: {
 			onClickBtnCreate: function () {
 				var o = this;
+				IUType = 'I';
 				o.dom.inputs.$inputUserGroupID.val('');
 				o.dom.inputs.$inputUserGroup.val('');
 
@@ -239,7 +242,8 @@
 				o.dom.$grid.data('kendoGrid').saveAsExcel();
 			},
 			onClickBtnUpdate: function (e) {
-				var o = this;
+				var o = this; 
+				IUType = 'U';
 				var di = o.dom.$grid.data('kendoGrid').dataItem($(e.target).closest('tr'));
 				o.dom.inputs.$inputUserGroupID.val(di.UserGroup_Id);
 				o.dom.inputs.$inputUserGroup.val(di.UserGroup);
@@ -391,6 +395,7 @@
 							url: 'https://localhost:7072/api/MasterUserGroup/INS',
 							dataType: 'text',
 							data: JSON.stringify({
+								IUType: IUType,
 								UserGroup_Id: UserGroup_Id,
 								UserGroup: UserGroup,
                                 UserLogin: "@Context.Session.GetString("PIC_ID")"

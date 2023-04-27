@@ -310,6 +310,7 @@
 								})
 							}).done(function (data, textStatus, jqXHR) {
 								try {
+									console.log(data);
 									var result = JSON.parse(data);
 								}
 								catch (e) {

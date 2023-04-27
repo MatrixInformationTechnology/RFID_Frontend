@@ -228,6 +228,7 @@
 			@if (Context.Session.GetString("read_report") == "True" ||
 					Context.Session.GetString("read_GRPro") == "True"||
 					Context.Session.GetString("read_MonitorPallet") == "True"||
+					Context.Session.GetString("read_AndonDelivery") == "True" ||
 					Context.Session.GetString("read_AndonBuffer") == "True")
 			{
 				<button class="collapsible">
@@ -269,6 +270,15 @@
 						<div class="rounded">
 							<a asp-controller="Report" asp-action="AndonBuffer" class="@getClass("Report", "AndonBuffer")">
 								<span class="icon-text">&nbsp;Andon Buffer</span>
+							</a>
+						</div>
+
+					}
+					@if (Context.Session.GetString("read_AndonDelivery") == "True")
+					{
+						<div class="rounded">
+							<a asp-controller="Report" asp-action="AndonDelivery" class="@getClass("Report", "AndonDelivery")">
+								<span class="icon-text">&nbsp;Andon Delivery</span>
 							</a>
 						</div>
 

@@ -137,37 +137,114 @@
                                 <form class="form-horizontal" id="submitMasterPart">
                                     <div class="flex">
                                         <div class="form-group form-material col-md-6">
-                                            <label class="col-sm-10 control-label">Material No.</label>
+                                            <label class="col-sm-10 control-label">plant</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="MaterialNo" required />
+                                                <input type="text" class="form-control" id="PlantID" required />
                                             </div>
                                         </div>
                                         <div class="form-group form-material col-md-6">
-                                            <label class="col-sm-10 control-label">Job No.</label>
+                                            <label class="col-sm-10 control-label">Gedung</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="JobNo" required />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex">
-                                        <div class="form-group form-material col-md-6">
-                                            <label class="col-sm-10 control-label">Material Name</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="MaterialName" required />
-                                            </div>
-                                        </div>
-                                        <div class="form-group form-material col-md-6">
-                                            <label class="col-sm-10 control-label">Material Desc.</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="MaterialDescription" required />
+                                                <input type="text" class="form-control" id="BuildingId" required />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="flex">
                                         <div class="form-group form-material col-md-6">
-                                            <label class="col-sm-10 control-label">Qty per Box</label>
+                                            <label class="col-sm-10 control-label">Part Number</label>
                                             <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="QtyPerBox" required />
+                                                <input type="text" class="form-control" id="PartNumber" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-material col-md-6">
+                                            <label class="col-sm-10 control-label">Part Name</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="PartName" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="form-group form-material col-md-6">
+                                            <label class="col-sm-10 control-label">Part Desc.</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="PartDesc" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-material col-md-6">
+                                            <label class="col-sm-10 control-label">Cycle Time</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="CycleTime" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="form-group form-material col-md-6">
+                                            <label class="col-sm-10 control-label">efficiency</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="Efficiency" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-material col-md-6">
+                                            <label class="col-sm-10 control-label">line</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="LineID" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="form-group form-material col-md-6">
+                                            <label class="col-sm-10 control-label">qty fix / pallet</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="QtyPerPallet" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-material col-md-6">
+                                            <label class="col-sm-10 control-label">pallet prod 1 day</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="QtyProdPerDay" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <br />
+                                    <div class="flex">
+                                        <div class="form-group form-material col-md-6">
+                                            <label class="col-sm-10 control-label"><strong>Standart Stock Part(pcs)</strong></label>
+                                            <div class="col-sm-10">
+                                              
+                                            </div>
+                                        </div>
+                                     </div>
+                                    <div class="flex">
+                                        <div class="form-group form-material col-md-6">
+                                            <label class="col-sm-10 control-label">maximum</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="PartStockMin" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-material col-md-6">
+                                            <label class="col-sm-10 control-label">minimum</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="PartStockMax" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="form-group form-material col-md-6">
+                                            <label class="col-sm-10 control-label">1 day</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="PartStockDay" required />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <br />
+                                    <div class="flex">
+                                        <div class="form-group form-material col-md-6">
+                                            <label class="col-sm-10 control-label">cycle max</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="CycleMax" required />
                                             </div>
                                         </div>
                                     </div>
@@ -187,6 +264,7 @@
 </div>
 
 <script>
+    var IUType = "I";
     var AppD = {
         attachEvents: function () {
             var o = this;
@@ -214,6 +292,7 @@
 
             onClickBtnCreate: function () {
                 var o = this;
+                IUType = "I";
                 $("#myModalLabel").html("Add New Part");
                 o.dom.inputs.$inputMaterialNo.val('');
                 o.dom.inputs.$inputJobNo.val('');
@@ -235,8 +314,8 @@
             },
 			onClickBtnUpdate: function (e) {
 				var o = this;
-                     
-				var di = o.dom.$grid.data('kendoGrid').dataItem($(e.target).closest('tr'));
+                IUType = "U";
+                var di = o.dom.$grid.data('kendoGrid').dataItem($(e.target).closest('tr'));
                 $("#myModalLabel").html("Edit Part");
 				o.dom.inputs.$inputMaterialNo.val(di.MaterialNo);
 				o.dom.inputs.$inputJobNo.val(di.JobNo);
@@ -260,7 +339,7 @@
                 var o = this;
                 var di = o.dom.$grid.data('kendoGrid').dataItem($(e.target).closest('tr'));
                 var textValue =  di.PartNumber + "#" + di.PartName + "#" + di.PartDescription;
-
+                console.log(textValue);
                 $("#qr_code").html("");  
                 $('#qr_code').qrcode(textValue);
                 var canvas = document.querySelector("#qr_code canvas");
@@ -290,13 +369,12 @@
                         pdf.text('Part No', 37 + rright, y+2);
                         pdf.text('Part Name', 37 + rright, y + 11);
                         pdf.text('Part Description', 37 + rright, y + 19);
-
                         pdf.setFontSize(14);
-                        pdf.text(di.MaterialNo, 37 + rright, y+7);
+                        pdf.text(di.PartNumber, 37 + rright, y + 7);
 
                         pdf.setFontSize(10);
-                        pdf.text(di.MaterialName , 37 + rright, y+15);
-                        pdf.text(di.MaterialDescription, 37 + rright, y+23);
+                        pdf.text(di.PartName, 37 + rright, y + 15);
+                        pdf.text(di.PartDescription, 37 + rright, y + 23);
                         rright = 148.5;
                     }
                     y += 40;
@@ -575,11 +653,22 @@
             $("#submitMasterPart").submit(function (e) {
                 e.preventDefault(); // avoid to execute the actual submit of the form.
 
-                var MaterialNo = $("#MaterialNo").val();
-                var JobNo = $("#JobNo").val();
-                var MaterialName = $("#MaterialName").val();
-                var MaterialDescription = $("#MaterialDescription").val();
-                var QtyPerBox = $("#QtyPerBox").val();
+
+
+                //IUType
+                PartNumber = $("#PartNumber").val();
+                PartName = $("#PartName").val();
+                PartDesc = $("#PartDesc").val();
+                CycleTime = $("#CycleTime").val();
+                Efficiency = $("#Efficiency").val();
+                LineID = $("#LineID").val();
+                QtyPerPallet = $("#QtyPerPallet").val();
+                QtyProdPerDay = $("#QtyProdPerDay").val();
+                PartStockMin = $("#PartStockMin").val();
+                PartStockMax = $("#PartStockMax").val();
+                PartStockDay = $("#PartStockDay").val();
+                CycleMax = $("#CycleMax").val();
+                //UserLogin
                 swal.fire({
                     title: "Save?",
                     icon: 'question',
@@ -594,11 +683,18 @@
                             url: 'https://localhost:7072/api/MasterPart/INS',
                             dataType: 'text',
                             data: JSON.stringify({
-                                MaterialNo      : MaterialNo,
-                                JobNo           : JobNo,
-                                MaterialName    : MaterialName,
-                                MaterialDescription : MaterialDescription,
-                                QtyPerBox       : QtyPerBox,
+                                IUType : IUType,
+                                PartNumber : PartNumber,
+                                PartName : PartName,
+                                PartDesc : PartDesc,
+                                CycleTime : CycleTime,
+                                Efficiency : Efficiency,
+                                LineID : LineID,
+                                QtyPerPallet : QtyPerPallet,
+                                QtyProdPerDay : QtyProdPerDay,
+                                PartStockMin : PartStockMin,
+                                PartStockMax : PartStockMax,
+                                PartStockDay : PartStockDay,
                                 UserLogin       : "@Context.Session.GetString("PIC_ID")"
                             })
                         }).done(function (data, textStatus, jqXHR) {         

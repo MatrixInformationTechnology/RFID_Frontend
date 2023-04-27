@@ -177,6 +177,7 @@
 </div>
 
 <script>
+	var IUType = 'I';
 	var AppD = {
 		attachEvents: function () {
 			var o = this;
@@ -201,6 +202,7 @@
 		eventHandlers: {
 			onClickBtnCreate: function () {
 				var o = this;
+				IUType = 'I';
 				o.dom.inputs.$inputUserID.val('');
 				o.dom.inputs.$inputName.val('');
 				o.dom.inputs.$inputPassword.val('');
@@ -263,6 +265,7 @@
 			},
 			onClickBtnUpdate: function (e) {
 				var o = this;
+				IUType = 'U';
 				var di = o.dom.$grid.data('kendoGrid').dataItem($(e.target).closest('tr'));
 
 				o.dom.inputs.$inputUserID.val(di.PIC_ID);
@@ -471,6 +474,7 @@
 								PIC_Name: Name,
 								password: Password,
 								UserGroup_Id: UserGroup,
+								IUType: IUType,
                                 UserLogin: "@Context.Session.GetString("PIC_ID")"
 							})
 						}).done(function (data, textStatus, jqXHR) {
